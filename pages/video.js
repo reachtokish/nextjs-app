@@ -71,7 +71,6 @@ class Video extends React.Component {
 }
 
 Video.getInitialProps = async function({ req }) {
-    console.log(req.params);
     let { params } = req;
     const getMovieData = await fetch(`http://demo9371423.mockable.io/movie/${params.id}`);
     const getRelatedMovieData = await fetch(`https://demo9371423.mockable.io/movie/${params.id}/related`);

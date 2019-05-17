@@ -71,7 +71,6 @@ class Index extends React.Component {
 }
 
 Index.getInitialProps = async function({ req }) {
-    console.log(req);
     const getMovieData = await fetch('http://demo9371423.mockable.io/movie/299534');
     const getRelatedMovieData = await fetch('https://demo9371423.mockable.io/movie/299534/related');
     const getMovieDataRes = await getMovieData.json();
