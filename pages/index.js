@@ -2,6 +2,7 @@ import Title from './../components/title';
 import Body from './../components/body';
 import RelatedVideoList from './../components/relatedVideoList';
 import fetch from 'isomorphic-unfetch';
+import Head from 'next/head';
 
 class Index extends React.Component {
 
@@ -28,6 +29,10 @@ class Index extends React.Component {
         let { getMovieDataRes, getRelatedMovieDataRes } = this.props;
 		return (
 			<div className="movie_wrapper">
+                <Head>
+                    <title>Awesome Next.Js App</title>
+                    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                </Head>
 				<div>
 					<div>
 						<Title
