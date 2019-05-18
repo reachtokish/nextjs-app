@@ -4,6 +4,7 @@ App built on Next.js, a React Framework
 ## Technologies Used
 - React.Js
 - Next.Js
+- isomorphic-unfetch
 
 ## To run the App
 ```sh
